@@ -8,7 +8,7 @@ export default function PostPage(){
     const {id}= useParams();
     const[postinfo,setpostinfo]=useState(null)
     useEffect(()=>{
-        fetch(`https://mern-blog-updated.onrender.com/post/${id}`)
+        fetch(`https://mern-blog-1-luct.onrender.com/post/${id}`)
         .then(response=>
             response.json()
             .then(post=>{
@@ -47,7 +47,7 @@ export default function PostPage(){
             <Link to={`/edit/${postinfo._id}`} className='bg-black text-white p-2 rounded w-1/4 m-auto'>
             <FontAwesomeIcon icon={faPenToSquare} beatFade /><span className='ml-1'>Edit this post</span></Link>
             <div className="w-full h-3/4 my-3 flex justify-center items-center">
-                <img className="w-3/4 object-cover object-center" src={`http://localhost:8000/${postinfo.cover}`}></img>
+                <img className="w-3/4 object-cover object-center" src={`https://mern-blog-1-luct.onrender.com/${postinfo.cover}`}></img>
             </div>
             <div className=" my-2 flex justify-center items-center flex-col">
                 <p className="text-yellow-200 text-center text-2xl underline">Summary</p>

@@ -15,7 +15,7 @@ const path=require("path");
 // const uploadMiddleware=multer({dest:'/uploads'})
 const uploadMiddleware = multer({ dest: path.join(__dirname, 'uploads') });
 const fs=require('fs');
-app.use(cors({credentials:true,origin:'https://mern-blog-updated.onrender.com'}));
+app.use(cors({credentials:true,origin:'https://mern-blog-1-luct.onrender.com'}));
 app.use(express.json());
 app.use(cookieParser());
 const _dirname=path.resolve();

@@ -7,7 +7,7 @@ function Register(){
     async function register(e)
     {
         e.preventDefault();
-        let response=await fetch('https://mern-blog-updated.onrender.com/register',{
+        let response=await fetch('https://mern-blog-1-luct.onrender.com/register',{
             method:'POST',
             body:JSON.stringify({username,password}),
             headers:{'Content-Type':'application/json'}

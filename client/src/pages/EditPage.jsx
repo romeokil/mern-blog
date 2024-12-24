@@ -11,7 +11,7 @@ function EditPage() {
     const [error,seterror]=useState(false);
 
     useEffect(()=>{
-        fetch('https://mern-blog-updated.onrender.com/post/'+id)
+        fetch('https://mern-blog-1-luct.onrender.com/post/'+id)
         .then(response=>{
             response.json()
             .then(postinfo=>{
@@ -39,7 +39,7 @@ function EditPage() {
         data.set('id',id);
         console.log("updatePost ke andr wala file dekh rhe hai",files);
         data.set('file',files);
-        const response=await fetch('https://mern-blog-updated.onrender.com/post',{
+        const response=await fetch('https://mern-blog-1-luct.onrender.com/post',{
             method:'PUT',
             body:data,
             credentials:'include',

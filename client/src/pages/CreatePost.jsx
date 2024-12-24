@@ -32,7 +32,7 @@ function CreatePost(){
         data.append("file",files);
         ev.preventDefault();
         console.log("Data",{data})
-        const response=await fetch('https://mern-blog-updated.onrender.com/post',{
+        const response=await fetch('https://mern-blog-1-luct.onrender.com/post',{
             method:'POST',
             body:data,
             credentials:'include',

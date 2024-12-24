@@ -3,7 +3,7 @@ import Template from '../Template.jsx'
 function IndexPage(){
     const[posts,setposts]=useState([]);
     useEffect(()=>{
-        fetch('https://mern-blog-updated.onrender.com/post').then(response=>{
+        fetch('https://mern-blog-1-luct.onrender.com/post').then(response=>{
         response.json().then((posts)=>{
             console.log(posts)
             setposts(posts)
