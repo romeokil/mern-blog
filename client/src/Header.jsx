@@ -4,7 +4,7 @@ import { UserContext } from './UserContext'
 function Header() {
   const {userInfo,setuserInfo}=useContext(UserContext);
   useEffect(()=>{
-    fetch('https://mern-blog-updated.onrender.com/profile',{
+    fetch('https://mern-blog-1-luct.onrender.com/profile',{
       credentials:'include',
     }).then(res=>{
       res.json().then(response=>{
@@ -15,7 +15,7 @@ function Header() {
   },[setuserInfo])
 
   function logout(){
-      fetch('https://mern-blog-updated.onrender.com/logout',{
+      fetch('https://mern-blog-1-luct.onrender.com/logout',{
         credentials:'include',
         method:'POST',
       })
