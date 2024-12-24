@@ -8,7 +8,7 @@ export default function PostPage(){
     const {id}= useParams();
     const[postinfo,setpostinfo]=useState(null)
     useEffect(()=>{
-        fetch(`http://localhost:8000/post/${id}`)
+        fetch(`https://mern-blog-updated.onrender.com/post/${id}`)
         .then(response=>
             response.json()
             .then(post=>{

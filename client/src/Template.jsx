@@ -7,7 +7,7 @@ function Template({_id,title,content,createdAt,summary,cover,author}) {
     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 m-8'>
       <div className=''>
         <Link to={`/post/${_id}`}>
-          <img src={'http://localhost:8000/'+cover} alt="this is an image"/>
+          <img src={'https://mern-blog-updated.onrender.com/'+cover} alt="this is an image"/>
         </Link>
       </div>
       <div>

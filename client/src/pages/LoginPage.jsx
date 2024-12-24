@@ -8,7 +8,7 @@ function LoginPage(){
     const {setuserInfo}=useContext(UserContext);
     async function login(ev){
         ev.preventDefault();
-        let response=await fetch('http://localhost:8000/login',{
+        let response=await fetch('https://mern-blog-updated.onrender.com/login',{
             method:'POST',
             body:JSON.stringify({username,password}),
             headers:{'Content-Type':'Application/json'},
